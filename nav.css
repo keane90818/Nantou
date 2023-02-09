@@ -1,0 +1,99 @@
+.navbar{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+}
+
+.nav_img{
+    overflow:hidden;
+    width:150px;
+}
+.check-img{
+    width:30px
+}
+
+.navbar-brand {
+    padding-top: var(--bs-navbar-brand-padding-y);
+    padding-bottom: var(--bs-navbar-brand-padding-y);
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: var(--bs-navbar-brand-font-size);
+    color: var(--bs-navbar-brand-color);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+
+.navbar-div{
+    border-radius: 15px;
+}
+
+/*bootstrap start*/
+.dropdown-item {
+    display: block;
+    width: 100%;
+    /* padding-top: 10px; */
+    padding: 1rem var(--bs-dropdown-item-padding-x);
+    clear: both;
+    font-weight: 400;
+    color: var(--bs-dropdown-link-color);
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+.dropdown-menu{
+    padding-top: 0px;
+}
+
+.dropdown-divider {
+    margin: 0px;
+    padding: 0px;
+    /* overflow: hidden; */
+    border-top: 5px solid var(--bs-dropdown-divider-bg);
+    opacity: 1;
+    /* opacity: 1; */
+}
+
+@media (min-width: 992px)
+{
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 40px;
+    padding-left : var(--bs-navbar-nav-link-padding-x);
+}
+}
+.nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+.dropdown-menu li:hover .sub-menu {visibility: visible;}
+.dropdown:hover .dropdown-menu {display: block;}
+
+/* 移動nav */
+
+
+.btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: gray;
+    border-color: gray;
+}
+/*bootstrap-end*/
+
+.search-button{
+    border: var(--bs-btn-border-width) solid black;
+    background: white;
+}
+.search-button:hover{
+    border: var(--bs-btn-border-width) solid black;
+    background: gray;
+}
+/*search動畫*/
+
+.search-box{
+    display:none;
+}

@@ -1,0 +1,77 @@
+
+/* first-part-start */
+.first-part,
+.second-part,
+.third-part
+{
+    background: #f2ede3;
+}
+
+.top-left-img{
+    max-width: 600px;
+    position: relative;
+    
+}
+
+.top-left{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.top-right{
+    margin-top: 50px;
+}
+
+
+.main-first-title{
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    color: #C4B4A5;
+    font-weight:1000;
+    letter-spacing: 2px;
+    font-family: 'Noto Sans TC',Helvetica,Arial,Lucida,sans-serif;
+}
+
+.main-first-discription{
+    padding-left: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.9em;
+    font-family: 'Noto Sans TC',Helvetica,Arial,Lucida,sans-serif;
+    color: rgba(196,146,102,0.7);
+}
+
+.main-first-discription-second{
+    margin-top: 20px;
+}
+
+.main-first-button button{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    color:#C4B4A5;
+    font-weight: 700;
+    border: 1px solid #C4B4A5;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+}
+
+.main-first-button button:hover{
+    background: gray;
+}
+
+/* first-part-end */
+
+/* second-parrt-start*/
+.second-part img{
+    max-width: 100%;
+}
+/* second-parrt-end*/
+/* footer-start*/
+
+/* footer-parrt-end*/
