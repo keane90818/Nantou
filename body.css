@@ -1,5 +1,22 @@
+.goTopButton{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    opacity: 0.6;
+    display: none;
+    z-index: 10;
+}
+
 
 /* first-part-start */
+.first-part{
+    margin-top: 50px;
+}
+
 .first-part,
 .second-part,
 .third-part
@@ -73,5 +90,37 @@
 }
 /* second-parrt-end*/
 /* footer-start*/
+.footer{
+    margin-top: 20px;
+    background-color: #b76821;
+    padding: 10px;
+}
+
+
+
+.left-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: black;
+    font-size: 15px;
+    
+}
+
+.right-menu{
+    
+    display: flex;
+    justify-content: center;
+}
+
+.right-menu a{
+    color: black;
+    padding-right: 20px;
+    font-size: 1rem;
+}
+
+
+
 
 /* footer-parrt-end*/

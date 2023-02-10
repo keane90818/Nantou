@@ -23,11 +23,22 @@
 }
 
 
+.header{
+    position: fixed;
+}
+
 .navbar-div{
     border-radius: 15px;
 }
 
 /*bootstrap start*/
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding-left: 20px;
+    align-items: center;
+}
+
 .dropdown-item {
     display: block;
     width: 100%;

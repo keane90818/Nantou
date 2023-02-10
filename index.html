@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>nantou</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,104 +25,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="body.css" />
-    <script src="script.js"></script>
+   
     <link rel="stylesheet" href="carcousel.css">
+    <script src="script.js"></script>
   </head>
 
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg nav-light bg-light sticky-top">
-        <!-- nav左上角圖片 -->
-        <a class="navbar-brand nav-logo" href="#">
-          <img
-            class="nav_img"
-            src="https://www.chenjiou.com/wp-content/uploads/2022/11/01_logo.png"
-            alt=""
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#linkbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="linkbar">
-          <ul class="navbar-nav  me-auto ">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">首頁</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle navbar-div"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                歷史建築
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><hr class="dropdown-divider dropdown-line" /></li>
-                <li><a class="dropdown-item" href="#">登瀛書院</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >傳統技藝</a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle navbar-div"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                美食老店
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><hr class="dropdown-divider dropdown-line" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">黑狗兄傳統手工餅舖</a>
-                </li>
-                <li><a class="dropdown-item" href="#">源振發製麵廠</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >團隊介紹</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >聯絡我們</a
-              >
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2 search-box"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-          </form>
-          <button
-            class="btn btn-outline-success search-button"
-            id="search-button"
-            type="submit"
-          >
-            <img class="check-img" src="/test0208/189254.svg" alt="" />
-          </button>
-        </div>
-      </nav>
-    </header>
+    <div class="headerPage"></div>
+    <aside>
+      <img  onclick="topFunction()" id="mybtn" class="goTopButton" title="回到頂端" src="arrow.png">
+    </aside>
     <div class="first-part">
       
       
@@ -187,72 +100,72 @@
       </div>
     </div>
     <div class="third-part">
-      <div class="container-third">
-        <input type="radio" name="slider" id="item-1" checked>
-        <input type="radio" name="slider" id="item-2">
-        <input type="radio" name="slider" id="item-3">
-        <input type="radio" name="slider" id="item-4">
-      <div class="cards">
-        <label class="card" for="item-1" id="song-1">
-          <img src="https://www.chenjiou.com/wp-content/uploads/2022/11/001.jpg" alt="song">
-        </label>
-        <label class="card" for="item-2" id="song-2">
-          <img src="https://www.chenjiou.com/wp-content/uploads/2022/11/S__2163485-scaled.jpg" alt="song">
-        </label>
-        <label class="card" for="item-3" id="song-3">
-          <img src="https://www.chenjiou.com/wp-content/uploads/2022/11/S__2163488-scaled.jpg" alt="song">
-        </label>
-        <label class="card" for="item-4" id="song-4">
-          <img src="https://www.chenjiou.com/wp-content/uploads/2022/11/002.jpg" alt="song">
-        </label>
-        
-      </div>
-      <div class="player">
-        <div class="upper-part">
-          <div class="play-icon">
-            <svg width="20" height="20" fill="#2992dc" stroke="#2992dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-play" viewBox="0 0 24 24">
-              <defs/>
-              <path d="M5 3l14 9-14 9V3z"/>
-            </svg>
-          </div>
-          <div class="info-area" id="test">
-            <label class="song-info" id="song-info-1">
-              <div class="title">Bunker</div>
-              <div class="sub-line">
-                <div class="subtitle">Balthazar</div>
-                <div class="time">4.05</div>
+          <div class="container-third">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <input type="radio" name="slider" id="item-4">
+          
+            <div class="cards">
+              <label class="card" for="item-1" id="song-1">
+                <img src="https://www.chenjiou.com/wp-content/uploads/2022/11/001.jpg" alt="song">
+              </label>
+              <label class="card" for="item-2" id="song-2">
+                <img src="https://www.chenjiou.com/wp-content/uploads/2022/11/S__2163485-scaled.jpg" alt="song">
+              </label>
+              <label class="card" for="item-3" id="song-3">
+                <img src="https://www.chenjiou.com/wp-content/uploads/2022/11/S__2163488-scaled.jpg" alt="song">
+              </label>
+              <label class="card" for="item-4" id="song-4">
+                <img src="https://www.chenjiou.com/wp-content/uploads/2022/11/002.jpg" alt="song">
+              </label>
+              
+            </div>
+          <div class="player">
+            <div class="upper-part">
+              <div class="play-icon">
+                <svg width="20" height="20" fill="#2992dc" stroke="#2992dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-play" viewBox="0 0 24 24">
+                  <defs/>
+                  <path d="M5 3l14 9-14 9V3z"/>
+                </svg>
               </div>
-            </label>
-            <label class="song-info" id="song-info-2">
-              <div class="title">Words Remain</div>
-              <div class="sub-line">
-                <div class="subtitle">Moderator</div>
-                <div class="time">4.05</div>
+              <div class="info-area" id="test">
+                <label class="song-info" id="song-info-1">
+                  <div class="title">Bunker</div>
+                  <div class="sub-line">
+                    <div class="subtitle">Balthazar</div>
+                    <div class="time">4.05</div>
+                  </div>
+                </label>
+                <label class="song-info" id="song-info-2">
+                  <div class="title">Words Remain</div>
+                  <div class="sub-line">
+                    <div class="subtitle">Moderator</div>
+                    <div class="time">4.05</div>
+                  </div>
+                </label>
+                <label class="song-info" id="song-info-3">
+                  <div class="title">Falling Out</div>
+                  <div class="sub-line">
+                    <div class="subtitle">Otzeki</div>
+                    <div class="time">4.05</div>
+                  </div>
+                </label>
+                <label class="song-info" id="song-info-4">
+                  <div class="title">黑狗兄</div>
+                  <div class="sub-line">
+                    <div class="subtitle">Otzeki</div>
+                    <div class="time">4.05</div>
+                  </div>
+                </label>
               </div>
-            </label>
-            <label class="song-info" id="song-info-3">
-              <div class="title">Falling Out</div>
-              <div class="sub-line">
-                <div class="subtitle">Otzeki</div>
-                <div class="time">4.05</div>
-              </div>
-            </label>
-            <label class="song-info" id="song-info-4">
-              <div class="title">黑狗兄</div>
-              <div class="sub-line">
-                <div class="subtitle">Otzeki</div>
-                <div class="time">4.05</div>
-              </div>
-            </label>
-          </div>
-        </div>
-        <div class="progress-bar">
-          <span class="progress"></span>
+            </div>
+            <div class="progress-bar">
+              <span class="progress"></span>
+            </div>
         </div>
       </div>
     </div>
-    <footer>
-      
-    </footer>
+    <div class="footerPage"></div>
   </body>
 </html>
