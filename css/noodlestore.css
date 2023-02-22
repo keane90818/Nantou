@@ -1,0 +1,93 @@
+.n-top{
+    margin-top: 150px;
+}
+
+.n-video{
+    
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.n-video video{
+    max-width: 100%;
+}
+
+.n-Bigtitle{
+
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    color: rgba(25,25,25,0.58);
+    font-weight: 800;
+    font-size: 40px;
+    font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+
+}
+
+.n-author{
+    color: rgba(25,25,25,0.58);
+    font-weight: 600;
+    display: flex;
+    justify-content: end;
+}
+
+.n-parargraph{
+    padding-top: 50px;
+}
+
+.n-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    color: #0c71c3;
+    font-weight: 800;
+    font-size: 30px;
+    font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+}
+.n-title span{
+    display: flex;
+    justify-content: center;
+}
+
+.n-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    padding-right: 30px;
+    font-weight: 700;
+    line-height: 1.9em;
+    font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+}
+
+.n-content p{
+    width: 100%;
+}
+.n-img-3 img{
+    width: 80%;
+    padding-top: 100px;
+}
+.n-img-2 img,
+.n-img-1 img{
+    padding-top: 50px;
+    width: 100%;
+}
+.n-img-3 p,
+.n-img-2 p,
+.n-img-1 p{
+    padding-top: 40px;
+    font-size: 15px;
+}
+
+.n-second{
+    margin-top: 50px;
+}
+
+.n-img-2{
+    margin-top: 100px;
+}
+
+
