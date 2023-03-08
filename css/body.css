@@ -73,6 +73,13 @@ body{
         font-family: 'Cormorant Infant',Georgia,"Times New Roman",serif;
     }
 
+    .top-left{
+        padding-top: 6rem;
+        padding-left: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
 }
 
