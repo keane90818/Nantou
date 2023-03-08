@@ -1,4 +1,7 @@
+
+
 $(document).ready(function(){  
+
     $(".headerPage").load("header.html");
     $(".footerPage").load("footer.html");
     
@@ -17,6 +20,7 @@ $(document).ready(function(){
         }
         });
     // 當我按下.gototop時，添加動畫讓卷軸跑道最上面
+    $('#modalBtn').click().hide();
     $('.goTopButton').click(function(){
         $('html,body').animate({
             scrollTop:$('html').offset().top
@@ -29,6 +33,7 @@ $(document).ready(function(){
         })
         return false;
     });
+   
   });
 
 
