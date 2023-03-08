@@ -10,36 +10,97 @@
     display: none;
     z-index: 10;
 }
-
-
-/* first-part-start */
-.first-part{
-    margin-top: 50px;
-}
-
-.first-part,
-.second-part,
-.third-part
-{
+body{
     background: #f2ede3;
-}
-
-.top-left-img{
-    max-width: 600px;
-    position: relative;
     
 }
 
-.top-left{
-    margin-top: 50px;
+.first-part{
+        background: url("https://www.chenjiou.com/wp-content/uploads/2022/11/0033.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center center;
+        
+}
+
+
+/* first-part-start */
+
+
+
+
+
+.third-part
+{
+    background: #f2ede3;
+    background-size: cover;
+        
+        background-repeat: no-repeat;
+        background-position:center center;
+}
+
+
+@media  (max-width: 980px){
+    .topic{   
+        height: 5rem;
+        padding-top: 2rem;
+        padding-left: 5rem;
+    }
+    
+    .topic h1 {
+        font-size: 60px;
+        height: auto;
+        line-height: normal;
+        color: #c4b4a5;
+        font-weight: 700;
+        font-family: 'Cormorant Infant',Georgia,"Times New Roman",serif;
+    }
+}
+
+@media (min-width:980px) {
+    .topic{   
+        height: 5rem;
+        padding-top: 2rem;
+        padding-left: 8rem;
+    }
+    
+    .topic h1{
+        height: auto;
+        line-height: normal;
+        color: #c4b4a5;
+        font-weight: 700;
+        font-family: 'Cormorant Infant',Georgia,"Times New Roman",serif;
+        font-size: 80px;
+    }
+}
+
+
+.topCon{
+    padding-top: 5rem;
     display: flex;
+    overflow: hidden;
+}
+
+.top-left{
+    padding-top: 5rem;
+    padding-left: 4rem;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
 .top-right{
-    margin-top: 50px;
+    
+    display: flex;
+    justify-content: center;
 }
 
+.top-left-img{
+    
+    width: 700px;
+    position: relative;
+    
+}
 
 .main-first-title{
     padding-top: 50px;
@@ -61,7 +122,7 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-transform: uppercase;
-
+    width: 12rem;
     letter-spacing: 5px;
 
 }
@@ -77,6 +138,7 @@
   height: 100%;
   color: #C4B4A5;
   overflow: hidden;
+  
   animation: type 1s steps(18), blink 0.5s infinite alternate;
   -webkit-animation: type 1s steps(18), blink 0.5s infinite alternate;
   white-space: nowrap;
@@ -89,20 +151,11 @@
     100% {
       width: 100%;
     }
-  }
-
-.main-first-discription{
-    padding-left: 10px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.9em;
-    font-family: 'Noto Sans TC',Helvetica,Arial,Lucida,sans-serif;
-    color: rgba(196,146,102,0.7);
 }
 
-.main-first-discription-second{
-    margin-top: 20px;
-}
+
+
+
 
 .main-first-button button{
     display: flex;
@@ -125,10 +178,66 @@
 /* first-part-end */
 
 /* second-parrt-start*/
+.second-part{
+    background: #f9f3fd;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position:center center;
+    
+}
+
+.beerDiv{
+    background: orange;
+    
+    border-radius: 300px 300px 0px 0px;
+}
 .second-part img{
+    position: relative;
+    left: -5%;
     max-width: 100%;
+    animation: moveBeer ease-in-out 4s infinite;
+}
+
+@keyframes moveBeer{
+    from{
+        
+        left:-100;
+    }
+    to{
+    
+        left:0px;
+    }
+}
+
+.secImg3:hover{
+    content: url("https://www.chenjiou.com/wp-content/uploads/2023/03/S__3964946.png");
+}
+.secImg2:hover{
+    content: url("https://www.chenjiou.com/wp-content/uploads/2023/03/S__3964945.png");
+}
+
+.secImg1:hover{
+    content: url("https://www.chenjiou.com/wp-content/uploads/2023/03/S__3964943.png");
+}
+
+
+#secTopicDiv{
+    display: flex;
+    justify-content: center;
+
+}
+
+#secTopic  {
+    display: block;
+    font-size: 5rem;
+    padding: 3rem 0rem;
 }
 /* second-parrt-end*/
+/* map-part-start */
+.map-part{
+    padding: 5rem 0rem;
+}
+/* map-part-end */
 /* footer-start*/
 .footer{
     background-color: #b76821;

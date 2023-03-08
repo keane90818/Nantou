@@ -1,7 +1,13 @@
 .navbar{
     font-family: 'Rubik', sans-serif;
     font-weight: 600;
+    position: relative;
 }
+
+.navbar .container-fluid {
+    z-index: 1;
+  }
+  
 
 .nav_img{
     overflow:hidden;
