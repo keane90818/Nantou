@@ -11,12 +11,12 @@
     z-index: 10;
 }
 body{
-    background: #f2ede3;
+    background: rgba(196,187,184,1);
     
 }
 
 .first-part{
-        background: url("https://www.chenjiou.com/wp-content/uploads/2022/11/0033.jpg");
+        background: url("https://www.chenjiou.com/wp-content/uploads/2023/03/—Pngtree—simple-geometric-color-plant-line_1280249.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position:center center;
@@ -61,7 +61,7 @@ body{
     .topic{   
         height: 5rem;
         padding-top: 2rem;
-        padding-left: 5rem;
+        padding-left: 6rem;
     }
     
     .topic h1 {
@@ -80,6 +80,7 @@ body{
         flex-direction: column;
         justify-content: center;
     }
+
 
 }
 
@@ -208,22 +209,25 @@ body{
 /* second-parrt-start*/
 .second-part{
     background: #f9f3fd;
+    background: url("https://www.chenjiou.com/wp-content/uploads/2023/03/acai-bowl-36.png");
+
+    
     background-size: cover; 
     background-repeat: no-repeat;
     background-position:center center;
     
 }
-
 .beerDiv{
     background: orange;
     
     border-radius: 300px 300px 0px 0px;
 }
+
 .second-part img{
     position: relative;
     left: -5%;
     max-width: 100%;
-    animation: moveBeer ease-in-out 4s infinite;
+    /* animation: moveBeer ease-in-out 4s infinite; */
 }
 
 @keyframes moveBeer{
@@ -247,8 +251,6 @@ body{
 .secImg1:hover{
     content: url("https://www.chenjiou.com/wp-content/uploads/2023/03/S__3964943.png");
 }
-
-
 #secTopicDiv{
     display: flex;
     justify-content: center;
@@ -260,10 +262,53 @@ body{
     font-size: 5rem;
     padding: 3rem 0rem;
 }
+@media (max-width:480px){
+    .row {
+        
+        margin: 0;
+        padding: 0;
+        display: flex; /*讓內容水平垂直置中*/
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+      }
+
+      .box {
+        /* background-color: rgb(158, 158, 242); */
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+        margin: 10px;
+        border-radius: 10px;
+        /* offset-x | offset-y | blur-radius | color */
+        box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+        transform: translateX(400%);  /*向右移動400%，若不寫預設為0*/
+        transition: transform 0.4s ease;
+      }
+      .box:nth-of-type(even) {  /*even:偶數*/
+        transform: translateX(-400%);
+      }
+      
+      .box.show {
+        transform: translateX(0);
+      }
+}
+
+
 /* second-parrt-end*/
 /* map-part-start */
 .map-part{
     padding: 5rem 0rem;
+    background: url("https://www.chenjiou.com/wp-content/uploads/2023/03/—Pngtree—green-geometric-color-plant-line_1279872-1.png");
+
+    
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position:center center;
 }
 /* map-part-end */
 
@@ -275,6 +320,18 @@ body{
         
         background-repeat: no-repeat;
         background-position:center center;
+}
+
+#thrTopicDiv{
+    display: flex;
+    justify-content: center;
+
+}
+
+#thrTopic  {
+    display: block;
+    font-size: 5rem;
+    padding: 0rem 0rem;
 }
 /* third-part-end */
 

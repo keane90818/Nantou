@@ -23,6 +23,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/body.css" />
     <link rel="stylesheet" href="css/modal.css">
@@ -37,7 +41,7 @@
     </aside>
 
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" id="modalBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<button type="button" class="btn btn-primary" id="modalBtn1" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Launch demo modal
 </button>
 
@@ -78,7 +82,7 @@
             <span>
               有人情味的縣市。
             </span>
-            <button type="button"class=" " id="modalBtn" data-bs-dismiss="modal">Enter</button>
+            <button type="button"class="animationBtn " id="modalBtn" data-bs-dismiss="modal">Enter</button>
 
           </div>
         </div>
@@ -93,14 +97,14 @@
     <div class="first-part">
       
       
-      <div class="topic ">
+      <div id="topicA" class="topic ">
         <h1>CHEN JIA </h1>
         <h1>JIU-NIANG</h1>
       </div>
       <div class="container topCon">
         <div class="row">
           <div class=" col-lg top-left">
-            <div class="main-first-title">
+            <div id="b">
               <h1>陳酒家釀</h1>
             </div>
             <div class="main-first-button">
@@ -109,7 +113,8 @@
           </div>
           <div class="col-lg top-right">
             <img
-              class="top-left-img"
+              id="topImg"
+              class="top-left-img "
               src="https://www.chenjiou.com/wp-content/uploads/2022/11/S__3760131.png"
               alt=""
             />
@@ -121,15 +126,18 @@
     </div>
     <div class="second-part">
       <div id="secTopicDiv">
-        <h1 id="secTopic">主題介紹</h1>
+        <h1 id="secTopic" class="topic1 animate__animated">主題介紹</h1>
       </div>
       
       <div class="container">
         <div class="row">
           <div class="col-lg">
-            <div class="beerDiv">
+            <div class="beerDiv" id="beerDiv2">
+              <button type="button" id="modalBtn2" style="display: none;"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                Launch demo modal
+              </button>
               <img
-              class="secImg1"
+              class=" secImg1 box"
               src="https://www.chenjiou.com/wp-content/uploads/2022/11/CAE0D3EC-152E-4222-8DB3-E7032E97C0D3.png"
               alt=""
             />
@@ -137,9 +145,12 @@
             
           </div>
           <div class="col-lg">
-            <div class="beerDiv">
+            <div class="beerDiv "id="beerDiv3">
+              <button type="button" id="modalBtn3" style="display: none;"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                Launch demo modal
+              </button>
               <img
-              class="secImg2"
+              class="secImg2 box"
               src="https://www.chenjiou.com/wp-content/uploads/2022/11/46298A18-3861-47DA-8ACD-8943F93DBAF9.png"
               alt=""
             />
@@ -147,9 +158,12 @@
             
           </div>
           <div class="col-lg">
-            <div class="beerDiv">
+            <div class="beerDiv "id="beerDiv4">
+              <button type="button" id="modalBtn4" style="display: none;"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                Launch demo modal
+              </button>
               <img
-              class="secImg3"
+              class="secImg3 box"
               src="https://www.chenjiou.com/wp-content/uploads/2022/11/34FE6DE8-CED0-45F6-89E9-5233D1381E83.png"
               alt=""
             />
@@ -159,10 +173,11 @@
         </div>
       </div>
     </div>
-    <div class="map-part container">
+    <div class="map-part ">
       <iframe src="https://uploads.knightlab.com/storymapjs/25135f6713fc12c0ea89d828ab9e34d6/abc/draft.html" frameborder="0" width="100%" height="400"></iframe>
     </div>
     <div class="third-part">
+      
           <div class="container-third">
             <input type="radio" name="slider" id="item-1" checked>
             <input type="radio" name="slider" id="item-2">
@@ -170,6 +185,7 @@
             <input type="radio" name="slider" id="item-4">
           
             <div class="cards">
+              <h2  id="thrTopic" class="card-topic topic1 animate__animated" style="display: flex; justify-content: center;">相片瀏覽</h2>
               <label class="card" for="item-1" id="song-1">
                 <img src="https://www.chenjiou.com/wp-content/uploads/2022/11/001.jpg" alt="song">
               </label>
@@ -187,8 +203,64 @@
           
       </div>
     </div>
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...2
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...3
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- Modal -->
+<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...4
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
     <div class="footerPage"></div>
   </body>
   <script src="script.js"></script>
-
+  <script>
+    
+</script>
 </html>

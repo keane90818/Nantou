@@ -8,7 +8,8 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
+  height: 60%;
+  /* 改大小 */
 }
 
 html, body {
@@ -22,9 +23,10 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px 10px;
+  /* padding: 0px 10px; */
   transition: .4s ease-in;
   background-color: #f2ede3;
+  height: 600px;
   
 
 }
@@ -46,8 +48,8 @@ input[type=radio] {
 
 .container-third {
   width: 100%;
-  max-width: 1200px;
-  max-height: 600px;
+  max-width: 1000px;
+  max-height: 400px;
   height: 100%;
   transform-style: preserve-3d;
   display: flex;
@@ -89,15 +91,15 @@ img {
   
   
 }
-
+/* 
 .player {
   background-color: #fff;
   border-radius: 8px;
   min-width: 320px;
   padding: 16px 10px;
-}
+} */
 
-.upper-part {
+/* .upper-part {
   position: relative;
   display: flex;
   align-items: center;
@@ -111,9 +113,9 @@ img {
 .song-info {
   width: calc(100% - 32px);
   display: block;
-}
+} */
 
-.song-info .title {
+/* .song-info .title {
   color: #403d40;
   font-size: 14px;
   line-height: 24px;
@@ -178,4 +180,4 @@ img {
 
 #item-4:checked ~ .player #test  {
     transform: translateY(-120px);
-  }
+  } */

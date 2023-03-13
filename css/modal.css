@@ -48,3 +48,17 @@
     background: #c47b3a;
     color: black;
 }
+
+
+
+
+
+/* 2 */
+
+#modalBtn2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: #fff;
+    cursor: pointer;
+  }

@@ -1,6 +1,9 @@
-.n-top{
-    margin-top: 150px;
+body{
+    background:#f4eed3 ;
 }
+
+
+
 
 .n-video{
     
@@ -12,6 +15,7 @@
 
 .n-video video{
     max-width: 100%;
+    padding: 2rem 0rem;
 }
 
 .n-Bigtitle{
@@ -21,7 +25,7 @@
     padding: 30px;
     color: rgba(25,25,25,0.58);
     font-weight: 800;
-    font-size: 40px;
+    font-size: 60px;
     font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
 
 }
@@ -31,63 +35,88 @@
     font-weight: 600;
     display: flex;
     justify-content: end;
-}
-
-.n-parargraph{
-    padding-top: 50px;
+    
 }
 
 .n-title{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 30px;
-    color: #0c71c3;
+    align-items: center;
+    font-size: 40px;
     font-weight: 800;
-    font-size: 30px;
-    font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+    background: #ffe684;
+    border-radius: 60px;
+    padding: 2rem 0rem;
 }
-.n-title span{
+.n-Div{
     display: flex;
     justify-content: center;
+    margin: 2rem 0rem;
+    background: #eacfb2;
+    border-radius: 60px;
+    padding: 2rem ;
 }
 
-.n-content{
+.n-imgDiv{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    font-size: 18px;
-    padding-right: 30px;
-    font-weight: 700;
-    line-height: 1.9em;
-    font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+    margin: 2rem 0rem;
+   
+    border-radius: 60px;
 }
-
-.n-content p{
+.n-paragraph{
+    padding: 2rem;
+    line-height: 1.5;
+    font-size: 2rem;
+    font-weight: 400;
+    width: 1000px;
+}
+.n-imgDiv img,
+.n-Div img{
     width: 100%;
 }
-.n-img-3 img{
-    width: 80%;
-    padding-top: 100px;
-}
-.n-img-2 img,
-.n-img-1 img{
-    padding-top: 50px;
-    width: 100%;
-}
-.n-img-3 p,
-.n-img-2 p,
-.n-img-1 p{
-    padding-top: 40px;
-    font-size: 15px;
-}
 
-.n-second{
-    margin-top: 50px;
-}
-
-.n-img-2{
-    margin-top: 100px;
+.imgDiv{
+    width: 50rem;
+    
 }
 
 
+
+
+@media (min-width:768px) {
+.starImg{
+    position: absolute;
+    z-index: 20;
+    max-width: 5rem;
+    left: 10%;
+    top: 240%;
+    animation: moveBeer ease-in-out 4s infinite;
+}
+}
+@media (max-width:768px) {
+    .starImg{
+        display: none;
+        position: absolute;
+        z-index: 20;
+        max-width: 5rem;
+        left: 10%;
+        top: 240%;
+        animation: moveBeer ease-in-out 4s infinite;
+    }
+    }
+
+@keyframes moveBeer{
+    0% {
+    transform: rotate(0deg);
+    left: 0%;
+  }
+  50% {
+    transform: rotate(15deg);
+    left: 10%;
+  }
+  100% {
+    transform: rotate(-15deg);
+    left: 0%;
+  }
+}
