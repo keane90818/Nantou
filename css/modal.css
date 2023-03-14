@@ -215,13 +215,13 @@
     line-height: 30px;
     transition: opacity 0.3s ease;
 }
-.m-card:hover  .m-card a,
+.m-card:hover  .m-card-a,
 .m-card:hover  .m-card-secTitle,
 .m-card:hover  .m-card-text{
     opacity: 1;
 }
 
-.m-card a {
+.m-card-a {
     opacity: 0;
     color: #e8f6fd;
     text-decoration: none;
@@ -231,7 +231,7 @@
     transition: opacity 0.3s ease;
 }
 
-.m-card a:hover {
+.m-card-a:hover {
     color: #Fff;
     background-color: #86a3b3;
 }
