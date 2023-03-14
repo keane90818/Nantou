@@ -133,12 +133,9 @@
         <div class="row">
           <div class="col-lg">
             <div class="beerDiv" id="beerDiv2">
-              <a href="building.html">
-                <button type="button" id="modalBtn2" style="display: none;"  class="btn btn-primary" href="building.html">
-                  Launch demo modal
-                </button>
-              </a>
-              
+              <button type="button" id="modalBtn2" style="display: none;"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                Launch demo modal
+              </button>
               <img
               class=" secImg1 box"
               src="https://www.chenjiou.com/wp-content/uploads/2022/11/CAE0D3EC-152E-4222-8DB3-E7032E97C0D3.png"
@@ -148,11 +145,10 @@
             
           </div>
           <div class="col-lg">
-            <div class="beerDiv "id="beerDiv3" >
-              <a href="technology.html"><button type="button" id="modalBtn3"  style="display: none;"  class="btn btn-primary" >
-              </button></a>
-              
-              
+            <div class="beerDiv "id="beerDiv3">
+              <button type="button" id="modalBtn3" style="display: none;"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                Launch demo modal
+              </button>
               <img
               class="secImg2 box"
               src="https://www.chenjiou.com/wp-content/uploads/2022/11/46298A18-3861-47DA-8ACD-8943F93DBAF9.png"
@@ -163,10 +159,9 @@
           </div>
           <div class="col-lg">
             <div class="beerDiv "id="beerDiv4">
-              <a href="oldStore.html"><button type="button" id="modalBtn4" style="display: none;"  class="btn btn-primary" href="building.html">
+              <button type="button" id="modalBtn4" style="display: none;"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
                 Launch demo modal
-              </button></a>
-              
+              </button>
               <img
               class="secImg3 box"
               src="https://www.chenjiou.com/wp-content/uploads/2022/11/34FE6DE8-CED0-45F6-89E9-5233D1381E83.png"
@@ -208,8 +203,63 @@
           
       </div>
     </div>
-   
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...2
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...3
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- Modal -->
+<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...4
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     <div class="footerPage"></div>
+    
   </body>
   <script src="script.js"></script>
   <script>

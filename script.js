@@ -4,7 +4,7 @@ $(document).ready(function(){
 
     $(".headerPage").load("header.html");
     $(".footerPage").load("footer.html");
-    
+    $(".modalPage").load("modal.html");
     $(".search-button").click(function(){
     $("input").slideToggle();
     });
@@ -92,6 +92,7 @@ $(document).ready(function(){
    var myButton2 = document.getElementById("beerDiv2");
     myButton2.addEventListener("click", function() {
   // 在這裡添加點擊按鈕後要執行的代碼
+  console.log('111');
   $('#modalBtn2').click().hide();
 
     }   );
@@ -99,6 +100,7 @@ $(document).ready(function(){
    var myButton3 = document.getElementById("beerDiv3");
    myButton3.addEventListener("click", function() {
  // 在這裡添加點擊按鈕後要執行的代碼
+ console.log('222');
  $('#modalBtn3').click().hide();
 
    }   );
@@ -106,6 +108,7 @@ $(document).ready(function(){
    var myButton4 = document.getElementById("beerDiv4");
     myButton4.addEventListener("click", function() {
   // 在這裡添加點擊按鈕後要執行的代碼
+  console.log('333');
   $('#modalBtn4').click().hide();
 
     }   );

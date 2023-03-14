@@ -1,7 +1,7 @@
 #firstModal{
     background-image: url("https://www.chenjiou.com/wp-content/uploads/2023/03/—Pngtree—colorful-color-block-plant-line_1280235.png");
     background-size: cover;
-    height: 100vh;
+    
     background-repeat: no-repeat;
     background-position:center center;
     
@@ -49,7 +49,9 @@
     color: black;
 }
 
-
+.aa{
+    display: none;
+}
 
 
 
@@ -62,3 +64,178 @@
     color: #fff;
     cursor: pointer;
   }
+
+
+
+/* 3大modal */
+.modal-fir{
+    background-image: url('https://www.chenjiou.com/wp-content/uploads/2023/03/home-care-42-scaled-1.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position:center center;
+    max-width: 100%;
+    height: 40rem;
+}
+
+.topicShape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 4;
+    margin-top: 15rem;
+    margin-left: 15rem;
+    background: #e5ceb9;
+    width: 40%;
+    height: 20%;
+    border-radius:0px 150px 150px 0px ;
+}
+
+.topicShape::after{
+    content: '';
+    position: absolute;
+    z-index: 3;
+    border: 10px solid #e5ceb9;
+    border-radius:0px 150px 150px 0px ;
+    width: 100%;
+    height: 100%;
+    margin-top: 5rem;
+    margin-right: 5rem;
+
+}
+
+/* .modal-content1{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+} */
+
+.modal-content1{
+    display: flex;
+    justify-content: center;
+}
+
+.m-card {
+    /* flex布局下元素不按比例缩放 */
+    flex-shrink: 0;
+    flex-grow: 0;
+    position: relative;
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+    margin: 20px;
+    background-color: #7591AD;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* flex 子元素 纵向排列 */
+    flex-direction: column;
+    /* 增加个阴影 */
+    box-shadow: 0 0 30px #2c2c2c;
+    /* 同意给字体价格颜色 */
+    color: #e8f6fd;
+}
+
+.photo {
+    position: absolute;
+    /* 默认为放大 */
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    border-radius: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.photo::before {
+    /* 通过before增加渐变背景实现遮罩，让文字默认看起来清晰一些 */
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    /* background: rgba(255,255,255,0.5); */
+    /* background-image: linear-gradient(to top, #333, transparent); */
+}
+
+.m-card:hover .photo::before{
+    /* 缩小时隐藏 */
+    display: none;
+}
+
+.photo img {
+    /* 图片高宽均为100% */
+    /* 然后按照cover缩放，裁切长边 */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.m-card:hover .photo {
+    /* 鼠标移上变小 */
+    width: 120px;
+    height: 120px;
+    top: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #111;
+}
+
+.m-card-title {
+    position: absolute;
+    top: 380px;
+    transition: 0.5s;
+}
+
+.m-card:hover .m-card-title {
+    position: absolute;
+    top: 170px;
+}
+
+.m-card-secTitle{
+    opacity: 0;
+    margin-top: 240px;
+    width: 80%;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #8ea2b8;
+    transition: opacity 0.3s ease;
+}
+
+.m-card-text {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    width: 90%;
+    /* 段落缩进2个字符大小 */
+    /* text-indent: 2em; */
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 30px;
+    transition: opacity 0.3s ease;
+}
+.m-card:hover  .m-card a,
+.m-card:hover  .m-card-secTitle,
+.m-card:hover  .m-card-text{
+    opacity: 1;
+}
+
+.m-card a {
+    opacity: 0;
+    color: #e8f6fd;
+    text-decoration: none;
+    padding: 12px 36px;
+    border: 1px solid #86a3b3;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.m-card a:hover {
+    color: #Fff;
+    background-color: #86a3b3;
+}
+
+
+
+

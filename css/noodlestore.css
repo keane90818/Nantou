@@ -92,6 +92,14 @@ body{
     left: 10%;
     top: 240%;
     animation: moveBeer ease-in-out 4s infinite;
+    
+}
+.n-paragraph{
+    padding: 2rem;
+    line-height: 1.5;
+    font-size: 2rem;
+    font-weight: 400;
+    width: 1000px;
 }
 }
 @media (max-width:768px) {
@@ -103,6 +111,13 @@ body{
         left: 10%;
         top: 240%;
         animation: moveBeer ease-in-out 4s infinite;
+    }
+    .n-paragraph{
+        padding: 2rem;
+        line-height: 1.5;
+        font-size: 2rem;
+        font-weight: 400;
+        width: 1000px;
     }
     }
 
